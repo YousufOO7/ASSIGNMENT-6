@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 6</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/37eb59c585.js" crossorigin="anonymous"></script>
+
+    <!-- daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primary': '#0E7A81',
+                'secondary': '#131313',
+              },
+              fontFamily: {
+                  'Lato': 'Lato'
+                },
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-Lato">
+    <header>
+      <nav class="w-11/12 md:w-10/12 mx-auto py-5 md:py-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <svg
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                
+                <svg
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+            >
+              <div class="flex flex-shrink-0 items-center">
+                 <img
+                  class="h-8 w-auto"
+                  src="./images/logo.webp"
+                  alt="Peddy"
+                />
+                <a
+                    href="#"
+                    class="rounded-md px-3 py-2 text-4xl font-bold"
+                    aria-current="page"
+                    >Peddy</a
+                  >
+              </div>
+              <div class="hidden lg:ml-72 md:ml-20 md:block sm:mt-3 sm:block">
+                <div class="flex space-x-4">
+                  <a
+                  href="#"
+                  class="block rounded-md px-3 py-2  font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                  >Home</a
+                >
+                <a
+                  href="#"
+                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                  >Shop</a
+                >
+                <a
+                  href="#"
+                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                  >Contact</a
+                >
+                </div>
+              </div>
+              
+            </div>
+            <button class="btn-circle border"><i class="fa-regular fa-user"></i></button>
+          </div>
+  
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a
+              href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              >Contact</a
+            >
+          </div>
+        </div>
+    </nav>
+
+          <!-- banner section start here -->
+          <section class="w-11/12 lg:w-10/12 mx-auto">
+            <!-- banner text -->
+             <div class="mx-auto text-center">
+                <p class="text-xl font-bold text-gray-400 py-2 lg:py-4">Bringing Families Together ❤️‍🔥</p>
+                <h1 class="text-3xl lg:text-5xl font-bold py-2 lg:py-4">Your Path to Adoption <br>Starts Here</h1>
+                <p class="w-5/6 lg:w-8/12 mx-auto py-2 lg:py-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <button class="btn py-2 lg:py-4 bg-primary text-white"> <a href='#my-main'>View More</button>
+             </div>
+              
+             <!-- banner image -->
+              <div class="mx-auto">
+                <img class="mx-auto" src="./images/pet.webp" alt="">
+                
+              </div>
+        </section>
+    </header>
+
+    
+      <main id="my-main" class="w-11/12 lg:w-10/12 mx-auto py-20">
+        <!-- main text div -->
+            <div class="mx-auto text-center py-5">
+                <h1 class="text-3xl lg:text-5xl font-bold py-2 lg:py-4">Adopt  Your  Best Friend</h1>
+                <p class="w-5/6 lg:w-8/12 mx-auto py-2 lg:py-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            </div>
+
+            <!-- category button div -->
+             <div id="pets-btn" class="grid grid-cols-1 ml-20 md:ml-0 md:grid-cols-2 lg:flex justify-between gap-5">
+               
+             </div>
+
+              
+
+             <!-- All pats text div -->
+              <div class="flex justify-between py-8 items-center text-center">
+                <h1 class="font-bold text-xl">Best Deal For you</h1>
+                <button onclick="sortBtn()" class="btn bg-primary text-white">Sort by price</button>
+              </div>
+
+              <!-- spinner div -->
+
+              <div id="spinner"></div>
+              
+
+             <!-- All pats show section -->
+             <section class="grid grid-cols-1 md:grid-cols-3 justify-between">
+
+                 <!-- showing pats div -->                 
+                <section class="col-span-2 border mr-2  rounded-xl p-2 lg:flex justify-between gap-3">
+                    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-3" id="pets-container">
+                       
+                      </div>
+                  </section>
+
+
+
+                 <!-- likes pats div -->
+                  <div  class="border mt-8 md:mt-0 p-2 rounded-xl space-y-2 lg:space-y-0 gap-2" >
+                     <div class=" grid grid-cols-1 md:grid-cols-2 gap-2" id="image-container"></div>
+                  </div>
+             </section>
+            
+      </main>
+
+<!-- details Modal div here -->
+<div id="modal-container">
+  
+</div>
+
+<!-- Adopt modal div here -->
+  <div id="adopt-container"></div>
+
+    <footer class="bg-secondary  p-5">
+        <section class="w-11/12 lg:w-10/12 mx-auto py-20 lg:grid grid-cols-3 lg:gap-20 space-y-8 md:space-y-0">
+            <div>
+                <div class="flex gap-2 items-center pb-5 text-white">
+                    <div><img class="text-sm" src="./images/logo.webp" alt=""></div>
+                    <div>
+                        <h2 class="font-bold text-3xl">Peddy</h2>
+                    </div>
+                  </div>
+                    
+                  <div class="text-gray-400">
+                    <p>Location: av. Washington 165, NY CA 54003</p>
+                  <p>Phone: +31 85 964 47 25</p>
+                  <p>Email: info@yourdomain.com</p>
+                  <p>Openings hours: 9.00 AM - 5.00 PM</p>
+                  </div>
+
+                  <div class="flex gap-5 pt-2 text-3xl ">
+                    <i class="fa-brands fa-facebook bg-white rounded-full text-blue-600"></i>
+                    <i class="fa-brands fa-youtube text-red-600"></i>
+                    <i class="fa-brands fa-square-instagram text-orange-600"></i>
+                    <i class="fa-brands fa-square-x-twitter text-white"></i>
+                  </div>
+
+            </div>
+            <!-- 2nd div -->
+             <div>
+                    <h2 class="font-bold text-3xl text-white pb-5">Useful Links</h2>
+                    <div class="text-gray-400 space-y-2 menu">
+                      <a href="#">Home</a>
+                      <a href="#">About Us</a>
+                      <a href="#">Foundation</a>
+                      <a href="#">Contact</a>
+                      </div>
+             </div>
+             <!-- 3rd div -->
+              <div>
+                <h2 class="font-bold text-3xl text-white pb-5">Drop a Message</h2>
+                <input type="text" placeholder="Type here" class="input input-bordered w-full bg-gray-900 border-gray-300 text-white" />
+                <button class="btn bg-primary text-white w-full mt-4 rounded-xl">Subscribe</button>
+              </div>
+        </section>
+    </footer>
+
+
+    <!-- Js file -->
+     <script src="./js/pat.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
